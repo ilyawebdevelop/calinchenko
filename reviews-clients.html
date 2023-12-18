@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Отзывы пациентов</title>
+</head>
+
+<body>
+	
+	<div class="wrapper">
+		<!-- Header -->
+<header class="header" id="header">
+  <div class="header__top d-none d-lg-block">
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex justify-content-between">
+          <div class="header__top-list d-flex gap-3 gap-xl-4 fw-500 text-uppercase c-gray">
+            <a href="#" class="d-flex align-items-center gap-1 c-gray ">aptekakpk.ru</a>
+            <a href="#" class="d-flex align-items-center gap-1 c-gray">
+              <img src="img/header/doctors.svg" alt="icon">
+              aptekakpk.ru
+            </a>
+            <a href="#" class="d-flex align-items-center gap-1">
+              <img src="img/header/center.svg" alt="icon">
+              Учебный центр КПК
+            </a>
+            <a href="#" class="d-flex align-items-center gap-1">
+              <img src="img/header/cafedre.svg" alt="icon">
+              Кафедра эндокринологии РУДН
+            </a>
+          </div>
+          <div class="header__top-right d-none d-xl-flex fw-500 gap-3">
+            <a href="#">Версия для слабовидящих</a>
+            <a class="c-blue" href="#">Личный кабинет</a>
+          </div>
+          <div class="header__top-right d-flex d-xl-none fw-500 gap-3">
+            <a href="#"></a>
+            <a class="c-blue" href="#">Личный кабинет</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div><!-- /header__top -->
+  <div class="header__bottom">
+    <div class="container">
+      <div class="row align-items-center mb-3 mb-lg-4">
+        <div class="col-8 col-sm-6 col-lg-3 d-flex">
+          <!-- Hamburger Menu -->
+          <div class="hamburger" id="toggle">
+            <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div>
+          </div>
+          <a class="logo" href="#">
+            <img src="img/header/logo.svg" alt="logo">
+          </a>
+        </div>
+        <div class="col-4 col-sm-6 col-lg-9">
+          <div class="header__content d-flex justify-content-end">
+            <div class="header__places d-none d-xl-flex gap-4">
+              <div class="header__place">
+                <div class="header__place-title">Столярный переулок 3, к. 3</div>
+                <div class="header__place-inner d-flex align-items-center gap-1">
+                  <img src="img/header/metro.svg" alt="icon">
+                  <span class="header__place-number bg-purple">7</span>
+                  <span class="header__place-name c-gray">Улица 1905 года</span>
+                </div>
+              </div>
+              <div class="header__place">
+                <div class="header__place-title">ул. Бутырская 4, стр. 2</div>
+                <div class="header__place-inner d-flex align-items-center gap-1">
+                  <img src="img/header/metro.svg" alt="icon">
+                  <span class="header__place-number bg-gray">9</span>
+                  <span class="header__place-name c-gray">Савёловская</span>
+                </div>
+              </div>
+            </div>
+            <div class="header__contacts d-flex gap-3 gap-lg-4">
+              <div class="header__contacts-left d-none d-lg-flex flex-column align-items-end justify-content-center">
+                <a class="fw-700" href="tel:+74959373403">+7 (495) 937-34-03</a>
+                <span class="c-gray">пн-сб 9–20, сб-вс 10–19</span>
+              </div>
+              <button class="btn header__btn d-none d-lg-flex" data-toggle="modal"
+                data-target="#modal-consult">Записаться
+                онлайн</button>
+              <button class="btn header__btn d-none d-sm-flex d-lg-none" data-toggle="modal"
+                data-target="#modal-consult">Записаться</button>
+                <ul class="header__socials_sm d-flex gap-3 d-lg-none">
+                  <li>
+                    <a href="tel:+74959373403">
+                      <img src="img/socials/phone-sm.svg" alt="icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/socials/user-sm.svg" alt="icon">
+                    </a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="has_children">
+                <a href="#">
+                  Направления
+                </a>
+                <div class="header__ways">
+                  <ul>
+                    <li>
+                      <a href="#">Акушерство и гинекология</a>
+                    </li>
+                    <li>
+                      <a href="#">Дерматовенерология</a>
+                    </li>
+                    <li>
+                      <a href="#">Диетология</a>
+                    </li>
+                    <li>
+                      <a href="#">Кардиология</a>
+                    </li>
+                    <li>
+                      <a href="#">Лечебная физкультура (ЛФК)</a>
+                    </li>
+                    <li>
+                      <a href="#">Мануальная терапия</a>
+                    </li>
+                    <li>
+                      <a href="#">Диетология</a>
+                    </li>
+                    <li>
+                      <a href="#">Диетология</a>
+                    </li>
+                    <li>
+                      <a href="#">Диетология</a>
+                    </li>
+                    <li>
+                      <a href="#">Диетология</a>
+                    </li>
+                    <li>
+                      <a href="#">Диетология</a>
+                    </li>
+                    <li>
+                      <a href="#">Диетология</a>
+                    </li>
+                    <li>
+                      <a href="#">Офтальмология</a>
+                    </li>
+                    <li>
+                      <a href="#">Диетология</a>
+                    </li>
+                    <li>
+                      <a href="#">Диетология</a>
+                    </li>
+                    <li>
+                      <a href="#">Диетология</a>
+                    </li>
+                    <li>
+                      <a href="#">Эндокринология</a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <a href="#">Анализы</a>
+                    </li>
+                    <li>
+                      <a href="#">Дневной стационар</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">Цены</a>
+              </li>
+              <li>
+                <a href="#">Врачи</a>
+              </li>
+              <li>
+                <a href="#">«Первый шаг»</a>
+              </li>
+              <li>
+                <a href="#">Акции</a>
+              </li>
+              <li>
+                <a href="#">Клиники</a>
+              </li>
+              <li>
+                <a href="#">Аптека</a>
+              </li>
+              <li class="has_children">
+                <a href="#">Ещё</a>
+                <div class="header__more">
+                  <nav class="header__more-nav">
+                    <ul>
+                      <li>
+                        <a href="#">Индивидуальные программы лечения</a>
+                      </li>
+                      <li>
+                        <a href="#">Экспертные центры КПК</a>
+                      </li>
+                      <li>
+                        <a href="#">Аптеки</a>
+                      </li>
+                      <li>
+                        <a href="#">COVID–19</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <nav class="header__more-nav">
+                    <div class="header__more-title">
+                      Обратная связь
+                    </div>
+                    <ul>
+                      <li>
+                        <a href="#">Отзывы пациентов</a>
+                      </li>
+                      <li>
+                        <a href="#">Оставить отзыв</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <nav class="header__more-nav">
+                    <div class="header__more-title">
+                      Для пациентов
+                    </div>
+                    <ul>
+                      <li>
+                        <a href="#">Новым пациентам</a>
+                      </li>
+                      <li>
+                        <a href="#">Налоговый вычет</a>
+                      </li>
+                      <li>
+                        <a href="#">Размещение депозита</a>
+                      </li>
+                      <li>
+                        <a href="#">Полезные советы от команды КПК</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <nav class="header__more-nav">
+                    <div class="header__more-title">
+                      Клиника
+                    </div>
+                    <ul>
+                      <li>
+                        <a href="#">О клинике</a>
+                      </li>
+                      <li>
+                        <a href="#">Концепция и методы</a>
+                      </li>
+                      <li>
+                        <a href="#">Фотогалерея</a>
+                      </li>
+                      <li>
+                        <a href="#">Мы в СМИ</a>
+                      </li>
+                      <li>
+                        <a href="#">Новости</a>
+                      </li>
+                      <li>
+                        <a href="#">Партнёры</a>
+                      </li>
+                      <li>
+                        <a href="#">Контакты</a>
+                      </li>
+                      <li>
+                        <a href="#">Реквизиты</a>
+                      </li>
+                      <li>
+                        <a href="#">Нормативно-правовые документы</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <nav class="header__more-nav">
+                    <div class="header__more-title">
+                      Работа в КПК
+                    </div>
+                    <ul>
+                      <li>
+                        <a href="#">Наши ординаторы</a>
+                      </li>
+                      <li>
+                        <a href="#">Вакансии</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <nav class="header__more-nav">
+                    <div class="header__more-title">
+                      Образование
+                    </div>
+                    <ul>
+                      <li class="has_children">
+                        <a href="#">Вебинары</a>
+                        <ul>
+                          <li>
+                            <a href="#">Инструкция к вебинарам</a>
+                          </li>
+                          <li class="active">
+                            <a href="#">Образовательный web-проект для врачей «гормональные вечера»</a>
+                          </li>
+                          <li class="active">
+                            <a href="#">Образовательный web-проект для врачей «Встреча с экспертом»</a>
+                          </li>
+                          <li class="active">
+                            <a href="#">Вебинары для врачей по субботам</a>
+                          </li>
+                          <li class="active">
+                            <a href="#">Открытый образовательный web-проект «Гормоны и жизнь. Хочу всё знать»</a>
+                          </li>
+                          <li class="active">
+                            <a href="#">Архив вебинаров</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="has_children">
+                        <a href="#">Школы</a>
+                        <ul>
+                          <li class="active">
+                            <a href="#">Школы выходного дня для специалистов</a>
+                          </li>
+                          <li>
+                            <a href="#">Выездные школы для специалистов</a>
+                          </li>
+                          <li class="active">
+                            <a href="#">Школы для всех</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">Конгресс ИССАМ</a>
+                      </li>
+                      <li class="has_children">
+                        <a href="#">Библиотека</a>
+                        <ul>
+                          <li>
+                            <a href="#">Новости медицины</a>
+                          </li>
+                          <li>
+                            <a href="#">Публикации КПК</a>
+                          </li>
+                          <li>
+                            <a href="#">Авторефераты</a>
+                          </li>
+                          <li>
+                            <a href="#">История эндокринологии</a>
+                          </li>
+                          <li>
+                            <a href="#">D-энциклопедия</a>
+                          </li>
+                          <li>
+                            <a href="#">Схема метаболизма</a>
+                          </li>
+                          <li>
+                            <a href="#">Методические рекомендации клиники</a>
+                          </li>
+                          <li>
+                            <a href="#">Клинические рекомендации</a>
+                          </li>
+                          <li>
+                            <a href="#">Учебно-методическая литература</a>
+                          </li>
+                          <li>
+                            <a href="#">Нормативная документация</a>
+                          </li>
+                          <li>
+                            <a href="#">Юридическая консультация</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="has_children">
+                        <a href="#">Образовательная деятельность</a>
+                        <ul>
+                          <li>
+                            <a href="#">Основные сведения</a>
+                          </li>
+                          <li class="has_children">
+                            <a href="#">Структура и органы управления образовательной деятельностью</a>
+                            <ul>
+                              <li>
+                                <a href="#">Руководство</a>
+                              </li>
+                              <li>
+                                <a href="#">Научно-педагогический состав</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="has_children">
+                            <a href="#">Документы и нормативные акты</a>
+                            <ul>
+                              <li>
+                                <a href="#">Образовательные стандарты</a>
+                              </li>
+                              <li>
+                                <a href="#">Федеральные законы</a>
+                              </li>
+                              <li>
+                                <a href="#">Локальные нормативные акты</a>
+                              </li>
+                              <li>
+                                <a href="#">Отчеты о результатах самообследования</a>
+                              </li>
+                              <li>
+                                <a href="#">Материально-техническое обеспечение</a>
+                              </li>
+                              <li>
+                                <a href="#">Порядок оказания платных образовательных услуг</a>
+                              </li>
+                              <li>
+                                <a href="#">Иные документы</a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </li>
+            </ul>
+            <button class="btn header__btn d-flex d-lg-none" data-toggle="modal"
+            data-target="#modal-consult">Записаться</button>
+            <div class="header__btn-search d-none d-lg-flex">
+              <!-- <img src="img/header/search.svg" alt="icon"> -->
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div><!-- /header__bottom -->
+  <div class="header-search-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <form class="search-form d-flex align-items-center gap-3">
+            <input type="search" placeholder="Услуга, вопрос, отделение">
+            <button class="btn btn--dark" type="submit">Найти</button>
+            <!-- <div class="search-form__close"><img src="img/icons/close.svg" alt="icon"></div> -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+		<main class="main">		
+			<div class="breadcrumbs" id="breadcrumbs">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <ul class="breadcrumbs__list d-flex align-items-center text-sm">
+          <li class="breadcrumbs__item">
+            <a href="#"></a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="#">Направления лечения</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="#">Терапия</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+			<!-- reviews-clients -->
+<section class="reviews-clients pt-0" id="reviews-clients">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <h1 class="mb-2">Отзывы о клинике профессора Калинченко</h1>
+        <p class="mb-4">Клиника профессора Калинченко благодарит вас за посещение. Оставьте отзыв и поставьте оценку —
+          ваше мнение
+          помогает нам становиться лучше</p>
+        <button class="btn header__btn" data-toggle="modal" data-target="#modal-reviews">Написать отзыв</button>
+      </div>
+      <div class="col-lg-4 d-none d-lg-block">
+        <div class="baner-reviews">
+          <h4 class="text-center">Больше отзывов о нас:</h4>
+          <ul class="d-flex gap-2 flex-wrap justify-content-center baner-reviews-list">
+            <li>
+              <a href="#" target="_blank"><img src="img/baner/rev-1.svg" alt="icon"></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><img src="img/baner/rev-2.svg" alt="icon"></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><img src="img/baner/rev-3.svg" alt="icon"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5 mb-4">
+      <div class="col">
+        <h4 class="mb-2">Фильтр отзывов</h4>
+        <form action="#" class="reviews-form d-flex gap-2 flex-column flex-sm-row">
+          <input type="search" placeholder="Поиск по врачу">
+          <button class="btn btn--dark">Показать отзывы</button>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="reviews-list">
+
+          <div class="reviews-slide mb-3">
+            <div class="reviews-slide__top d-flex flex-column flex-lg-row gap-2 mb-2 align-items-start align-items-lg-center">
+              <h3 class="reviews-slide__title">Татьяна</h3>
+              <span class="reviews-slide__date">25 октября 2022</span>
+            </div>
+            <p class="reviews-slide__text text-sm">Хожу только к Даниличевой И. И. — прекрасный специалист, довольна
+              на все 100%. Не удобно при потерянных направлениях приезжать лично за дубликатом, можно либо личный
+              кабинет сделать клиентам, либо на почту высылать документы, а в остальном все просто идеально!
+            </p>
+            <a href="#" class="reviews-slide__link c-blue text-uppercase">Сейидли Самая Магаммедалиевна</a>
+          </div>
+          <div class="reviews-slide mb-3">
+            <div class="reviews-slide__top d-flex flex-column flex-lg-row gap-2 mb-2 align-items-start align-items-lg-center">
+              <h3 class="reviews-slide__title">Сергей Сорокин</h3>
+              <span class="reviews-slide__date">25 октября 2022</span>
+            </div>
+            <p class="reviews-slide__text text-sm">Отличный коллектив профессионалов с современными подходами. Сам уже
+              более 10 лет наблюдаюсь здесь у врачей и очень доволен, помогли мне изменить себя и свою жизнь
+            </p>
+          </div>
+          <div class="reviews-slide mb-3">
+            <div class="reviews-slide__top d-flex flex-column flex-lg-row gap-2 mb-2 align-items-start align-items-lg-center">
+              <h3 class="reviews-slide__title">Ирина</h3>
+              <span class="reviews-slide__date">25 октября 2022</span>
+            </div>
+            <p class="reviews-slide__text text-sm">Я хочу сказать свои чувства, как дочери. Мама живёт одна в другом
+              городе, и то, что я за неё спокойна — это огромное спасибо. Это ощущение, что родители живы и здоровы.
+              Это очень хорошо. Я как дочь, просто безумно счастлива, что я за неё спокойна. и то, что она на позитиве
+              таком. Это бесценно, просто бесценно!
+            </p>
+            <a href="#" class="reviews-slide__link c-blue text-uppercase">Сейидли Самая Магаммедалиевна</a>
+          </div>
+          <div class="reviews-slide mb-3">
+            <div class="reviews-slide__top d-flex flex-column flex-lg-row gap-1 gap-lg-2 mb-2 align-items-start align-items-lg-center">
+              <h3 class="reviews-slide__title">Татьяна</h3>
+              <span class="reviews-slide__date">25 октября 2022</span>
+            </div>
+            <p class="reviews-slide__text text-sm">Хожу только к Даниличевой И. И. — прекрасный специалист, довольна
+              на все 100%. Не удобно при потерянных направлениях приезжать лично за дубликатом, можно либо личный
+              кабинет сделать клиентам, либо на почту высылать документы, а в остальном все просто идеально!
+            </p>
+            <a href="#" class="reviews-slide__link c-blue text-uppercase">Сейидли Самая Магаммедалиевна</a>
+          </div>
+
+        </div><!-- /reviews-list -->
+
+        <a href="#" class="btn loadmore loadmore--dark mt-4">Показать ещё</a>
+
+      </div>
+    </div>
+  </div>
+</section>	
+		</main>
+		<!-- Footer -->
+<footer class="footer" id="footer">
+  <div class="footer__content">
+    <div class="container">
+      <a href="#" class="contacts-logo logo d-block d-xl-none"><img src="img/header/logo.svg" alt="logo"></a>
+      <div
+        class="contacts d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3 gap-md-0">
+        <a href="#" class="logo d-none d-xl-block"><img src="img/header/logo.svg" alt="logo"></a>
+        <div class="contacts-item">
+          <span class="text-sm c-light-gray d-block mb-1">Контактный центр</span>
+          <a class="fw-700" href="tel:+74959373403">+7 (495) 937-34-03</a>
+        </div>
+        <div class="contacts-item">
+          <span class="text-sm c-light-gray d-block mb-1">E-mail</span>
+          <a class="fw-700" href="mailto:info@proandro.ru">info@proandro.ru</a>
+        </div>
+        <div class="contacts-item">
+          <span class="text-sm c-light-gray d-block mb-1">Онлайн-чат</span>
+          <a class="fw-700" href="#" target="_blank">Написать в чат</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__content">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 mb-0 mb-md-4 mb-xl-0 order-4 order-md-1">
+          <div class="footer__content_first_wrapper d-flex flex-column flex-md-row flex-xl-column gap-4 gap-xl-0">
+            <div class="footer__callback">
+              <button class="btn footer__btn" data-toggle="modal"
+              data-target="#modal-consult">
+                Записаться онлайн
+              </button>
+              <button class="btn footer__btn footer__btn_gray" data-toggle="modal"
+              data-target="#modal-consult">
+                Обратный звонок
+              </button>
+              <p class="d-block d-xl-none mt-3 mb-1 c-gray">
+                Информация и цены, представленные на сайте, являются справочными и не являются публичной офертой.
+              </p>
+              <p class="d-block d-xl-none c-gray">
+                Имеются противопоказания. Необходимо
+                проконсультироваться со специалистом
+              </p>
+            </div>
+            <div class="footer__work-wrapper">
+              <div class="footer__work-items">
+                <div class="footer__work-item">
+                  <span class="fw-700 text-sm mb-1 mb-sm-0 d-block">Столярный переулок 3, к. 3</span>
+                  <div class="d-flex align-items-center gap-1 mb-3">
+                    <img src="img/header/metro.svg" alt="icon">
+                    <span class="header__place-number bg-purple">7</span>
+                    <span class="header__place-name c-gray">Улица 1905 года</span>
+                  </div>
+                  <div class="footer__work d-flex align-items-center justify-content-between text-sm mb-1">
+                    <span class="fw-700">Понедельник-пятница</span>
+                    <span>9:00–20:00</span>
+                  </div>
+                  <div class="footer__work d-flex align-items-center justify-content-between text-sm mb-1">
+                    <span class="fw-700">Суббота</span>
+                    <span>10:00–19:00</span>
+                  </div>
+                  <div class="footer__work d-flex align-items-center justify-content-between text-sm mb-1">
+                    <span class="fw-700">Воскресенье</span>
+                    <span class="c-red">Выходной</span>
+                  </div>
+                </div><!-- /footer__work-item -->
+                <div class="footer__work-item">
+                  <span class="fw-700 text-sm mb-1 mb-sm-0 d-block">ул. Бутырская 4, стр. 2</span>
+                  <div class="d-flex align-items-center gap-1 mb-3">
+                    <img src="img/header/metro.svg" alt="icon">
+                    <span class="header__place-number bg-gray">9</span>
+                    <span class="header__place-name c-gray">Савёловская</span>
+                  </div>
+                  <div class="footer__work d-flex align-items-center justify-content-between text-sm mb-1">
+                    <span class="fw-700">Понедельник-пятница</span>
+                    <span>9:00–20:00</span>
+                  </div>
+                  <div class="footer__work d-flex align-items-center justify-content-between text-sm mb-1">
+                    <span class="fw-700">Суббота-воскресенье</span>
+                    <span>10:00–19:00</span>
+                  </div>
+                </div><!-- /footer__work-item -->
+              </div><!-- /footer__work-items -->
+              <p class="d-none d-xl-block mt-3 mb-1 c-gray">
+                Информация и цены, представленные на сайте, являются справочными и не являются публичной офертой.
+              </p>
+              <p class="d-none d-xl-block c-gray">
+                Имеются противопоказания. Необходимо
+                проконсультироваться со специалистом
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-xl-3 order-1 order-md-2">
+          <span class="fw-700 mb-2 d-block fz-16">Навигация</span>
+          <nav class="footer__nav border-bottom">
+            <ul class="footer__nav-list">
+              <li class="has_children">
+                <a href="#">Направления</a>
+                <div class="footer__ways">
+                  <ul>
+                    <li>
+                      <a href="#">Акушерство и гинекология</a>
+                    </li>
+                    <li>
+                      <a href="#">Дерматовенерология</a>
+                    </li>
+                    <li>
+                      <a href="#">Диетология</a>
+                    </li>
+                    <li>
+                      <a href="#">Кардиология</a>
+                    </li>
+                    <li>
+                      <a href="#">Лечебная физкультура (ЛФК)</a>
+                    </li>
+                    <li>
+                      <a href="#">Мануальная терапия</a>
+                    </li>
+                    <li>
+                      <a href="#">Диетология</a>
+                    </li>
+                    <li>
+                      <a href="#">Диетология</a>
+                    </li>
+                    <li>
+                      <a href="#">Диетология</a>
+                    </li>
+                    <li>
+                      <a href="#">Диетология</a>
+                    </li>
+                    <li>
+                      <a href="#">Диетология</a>
+                    </li>
+                    <li>
+                      <a href="#">Диетология</a>
+                    </li>
+                    <li>
+                      <a href="#">Офтальмология</a>
+                    </li>
+                    <li>
+                      <a href="#">Диетология</a>
+                    </li>
+                    <li>
+                      <a href="#">Диетология</a>
+                    </li>
+                    <li>
+                      <a href="#">Диетология</a>
+                    </li>
+                    <li>
+                      <a href="#">Эндокринология</a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <a href="#">Анализы</a>
+                    </li>
+                    <li>
+                      <a href="#">Дневной стационар</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">Цены</a>
+              </li>
+              <li>
+                <a href="#">Врачи</a>
+              </li>
+              <li>
+                <a href="#">«Первый шаг»</a>
+              </li>
+              <li>
+                <a href="#">Акции</a>
+              </li>
+              <li>
+                <a href="#">Клиники</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="footer__nav mt-2">
+            <ul class="footer__nav-list">
+              <li>
+                <a href="#">Индивидуальные программы лечения</a>
+              </li>
+              <li>
+                <a href="#">Экспертные центры КПК</a>
+              </li>
+              <li>
+                <a href="#">Аптеки</a>
+              </li>
+              <li>
+                <a href="#">COVID–19</a>
+              </li>
+            </ul>
+          </nav>
+          <span class="fw-700 mb-2 d-block mt-4 mt-md-3 fz-16">Обратная связь</span>
+          <nav class="footer__nav mt-2">
+            <ul class="footer__nav-list">
+              <li>
+                <a href="#">Отзывы пациентов</a>
+              </li>
+              <li>
+                <a href="#">Оставить отзыв</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-4 col-xl-3 order-2 order-md-3">
+          <span class="fw-700 mb-2 d-block mt-4 mt-md-0 fz-16">Клиника</span>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li>
+                <a href="#">О клинике</a>
+              </li>
+              <li>
+                <a href="#">Концепция и методы</a>
+              </li>
+              <li>
+                <a href="#">Фотогалерея</a>
+              </li>
+              <li>
+                <a href="#">Мы в СМИ</a>
+              </li>
+              <li>
+                <a href="#">Новости</a>
+              </li>
+              <li>
+                <a href="#">Партнёры</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+              <li>
+                <a href="#">Реквизиты</a>
+              </li>
+              <li>
+                <a href="#">Нормативно-правовые документы</a>
+              </li>
+            </ul>
+          </nav>
+          <span class="fw-700 mb-2 d-block mt-4 mt-md-3 fz-16">Работа в КПК</span>
+          <nav class="footer__nav mt-2">
+            <ul class="footer__nav-list">
+              <li>
+                <a href="#">Наши ординаторы</a>
+              </li>
+              <li>
+                <a href="#">Вакансии</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-4 col-xl-3 order-3 order-md-4">
+          <span class="fw-700 mb-2 d-block mt-4 mt-md-0 fz-16">Для пациентов</span>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li>
+                <a href="#">Новым пациентам</a>
+              </li>
+              <li>
+                <a href="#">Налоговый вычет</a>
+              </li>
+              <li>
+                <a href="#">Размещение депозита</a>
+              </li>
+              <li>
+                <a href="#">Полезные советы от команды КПК</a>
+              </li>
+            </ul>
+          </nav>
+          <span class="fw-700 mb-2 d-block mt-4 mt-md-3 fz-16">Образование</span>
+          <nav class="footer__nav mt-2">
+            <ul class="footer__nav-list">
+              <li class="has_children">
+                <a href="#">Вебинары</a>
+                <ul>
+                  <li>
+                    <a href="#">Инструкция к вебинарам</a>
+                  </li>
+                  <li class="active">
+                    <a href="#">Образовательный web-проект для врачей «гормональные вечера»</a>
+                  </li>
+                  <li class="active">
+                    <a href="#">Образовательный web-проект для врачей «Встреча с экспертом»</a>
+                  </li>
+                  <li class="active">
+                    <a href="#">Вебинары для врачей по субботам</a>
+                  </li>
+                  <li class="active">
+                    <a href="#">Открытый образовательный web-проект «Гормоны и жизнь. Хочу всё знать»</a>
+                  </li>
+                  <li class="active">
+                    <a href="#">Архив вебинаров</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="has_children">
+                <a href="#">Школы</a>
+                <ul>
+                  <li class="active">
+                    <a href="#">Школы выходного дня для специалистов</a>
+                  </li>
+                  <li>
+                    <a href="#">Выездные школы для специалистов</a>
+                  </li>
+                  <li class="active">
+                    <a href="#">Школы для всех</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Конгресс ИССАМ</a>
+              </li>
+              <li class="has_children">
+                <a href="#">Библиотека</a>
+                <ul>
+                  <li>
+                    <a href="#">Новости медицины</a>
+                  </li>
+                  <li>
+                    <a href="#">Публикации КПК</a>
+                  </li>
+                  <li>
+                    <a href="#">Авторефераты</a>
+                  </li>
+                  <li>
+                    <a href="#">История эндокринологии</a>
+                  </li>
+                  <li>
+                    <a href="#">D-энциклопедия</a>
+                  </li>
+                  <li>
+                    <a href="#">Схема метаболизма</a>
+                  </li>
+                  <li>
+                    <a href="#">Методические рекомендации клиники</a>
+                  </li>
+                  <li>
+                    <a href="#">Клинические рекомендации</a>
+                  </li>
+                  <li>
+                    <a href="#">Учебно-методическая литература</a>
+                  </li>
+                  <li>
+                    <a href="#">Нормативная документация</a>
+                  </li>
+                  <li>
+                    <a href="#">Юридическая консультация</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="has_children">
+                <a href="#">Образовательная деятельность</a>
+                <ul>
+                  <li>
+                    <a href="#">Основные сведения</a>
+                  </li>
+                  <li class="has_children">
+                    <a href="#">Структура и органы управления образовательной деятельностью</a>
+                    <ul>
+                      <li>
+                        <a href="#">Руководство</a>
+                      </li>
+                      <li>
+                        <a href="#">Научно-педагогический состав</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="has_children">
+                    <a href="#">Документы и нормативные акты</a>
+                    <ul>
+                      <li>
+                        <a href="#">Образовательные стандарты</a>
+                      </li>
+                      <li>
+                        <a href="#">Федеральные законы</a>
+                      </li>
+                      <li>
+                        <a href="#">Локальные нормативные акты</a>
+                      </li>
+                      <li>
+                        <a href="#">Отчеты о результатах самообследования</a>
+                      </li>
+                      <li>
+                        <a href="#">Материально-техническое обеспечение</a>
+                      </li>
+                      <li>
+                        <a href="#">Порядок оказания платных образовательных услуг</a>
+                      </li>
+                      <li>
+                        <a href="#">Иные документы</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <span class="fw-700 mb-2 d-block mt-3 fz-16">Присоединяйтесь к нам</span>
+          <div class="socials">
+            <ul class="socials__list d-flex px-2">
+              <li class="socials__item">
+                <a href="#" target="_blank"><img src="img/socials/telegram.svg" alt="icon"></a>
+              </li>
+              <li class="socials__item">
+                <a href="#" target="_blank"><img src="img/socials/vk.svg" alt="icon"></a>
+              </li>
+              <li class="socials__item">
+                <a href="#" target="_blank"><img src="img/socials/ok.svg" alt="icon"></a>
+              </li>
+              <li class="socials__item">
+                <a href="#" target="_blank"><img src="img/socials/youtube.svg" alt="icon"></a>
+              </li>
+            </ul>
+          </div><!-- /socials -->
+          <div class="footer__age c-gray fw-700">
+            Сайт может содержать материалы для лиц старше 18 лет
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__content">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-7">
+          <span class="fw-500 d-block mb-2 text-sm clinic-logo">© 2010–2023 ООО «Клиника профессора Калинченко»</span>
+          <span class="text-sm mb-2 mb-xl-0 d-block">Лицензия на осуществление медицинской деятельности
+            № Л0–77–01–020590 от 16.10.2020г.</span>
+        </div>
+        <div class="col-xl-5">
+          <ul class="footer__content-links d-flex flex-wrap text-sm justify-content-start justify-content-xl-end flex-column flex-xl-row">
+            <li>
+              <a class="c-dark-gray eye" href="#">Версия для слабовидящих</a>
+            </li>
+            <li>
+              <a class="c-blue personal" href="#">Личный кабинет</a>
+            </li>
+            <li>
+              <a class="c-dark-gray" href="#">Политика по обработке персональных данных</a>
+            </li>
+            <li>
+              <a class="c-dark-gray" href="#">Карта сайта</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__content footer__content_sm c-dark-gray">
+    <div class="container">
+      <p>
+        Все материалы данного сайта являются объектами авторского права (в том числе дизайн). Запрещается копирование,
+        распространение (в том числе путём копирования на другие сайты и ресурсы в Интернете) или любое иное
+        использование
+        информации и объектов без предварительного письменного согласия ООО «Клиника профессора Калинченко». Указание
+        ссылки на источник информации является обязательным.
+      </p>
+      <p>
+        Материалы, размещённые на данной странице, носят информационный характер и предназначены для образовательных
+        целей. Посетители сайта не должны использовать их в качестве медицинских рекомендаций. Определение диагноза
+        и выбор методики лечения остаётся исключительной прерогативой вашего лечащего врача. ООО «Клиника профессора
+        Калинченко» не несёт ответственности за возможные негативные последствия, возникшие в результате использования
+        информации, размещённой на сайте proandro.ru
+      </p>
+    </div>
+  </div>
+</footer>
+		<!-- modal -->
+<!-- Консультация -->
+<div class="modal fade modal-consult" id="modal-consult" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Обратный звонок</h2>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="mb-1 c-dark-gray">
+          Мы ценим ваше время и готовы помочь быстро найти нужную информацию. Введите номер, и мы перезвоним
+          вам для уточнения деталей и записи на приём. Пожалуйста, будьте готовы ответить на звонок.
+        </p>
+        <p class="text-sm c-dark-gray fw-500">Часы работы колл-центра: пн-сб 9–20, сб-вс 10–19</p>
+        <form class="consult-form" id="consult-form" method="POST" enctype="multipart/form-data">
+          <div class="consult-form__input-wrapper form-floating mb-3">
+            <input class="form-control consult-form__input" id="consult-name" type="text" placeholder="Ваше имя*"
+              required>
+            <label for="consult-name">Ваше имя*</label>
+          </div>
+          <div class="consult-form__input-wrapper form-floating mb-3">
+            <input class="form-control consult-form__input" id="consult-phone" type="tel" placeholder="Номер телефона*"
+              required>
+            <label for="consult-phone">Номер телефона*</label>
+          </div>
+          <div class="consult-form__input-wrapper mb-2 d-block text-sm">
+            <span class="c-gray">Удобное время для звонка (по Москве):</span>
+          </div>
+          <div class="day-time__items d-flex gap-1 gap-sm-2">
+            <div class="day-time__item">
+              <input type="radio" name="modal-day" id="time_1" hidden checked>
+              <label for="time_1">Сейчас</label>            
+            </div>
+            <div class="day-time__item">
+              <input type="radio" name="modal-day" id="time_2" hidden>
+              <label for="time_2">Утро</label>             
+            </div>
+            <div class="day-time__item">
+              <input type="radio" name="modal-day" id="time_3" hidden>
+              <label for="time_3">День</label>   
+            </div>
+            <div class="day-time__item">
+              <input type="radio" name="modal-day" id="time_4" hidden>
+              <label for="time_4">Вечер</label>  
+            </div>
+          </div>
+          <button class="btn btn-primary modal-btn button">Заказать звонок</button>
+          <div class="agreement">
+            <p class="form-policy">Нажимая на кнопку, вы даёте согласие на <a href="#">обработку персональных данных</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Reviews -->
+<div class="modal fade modal-reviews" id="modal-reviews" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel_1">Написать отзыв</h2>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">     
+        <form class="review-form" id="review-form" method="POST" enctype="multipart/form-data"> 
+          <span class="text-sm c-gray d-block mb-1">Ваше имя</span>
+          <div class="consult-form__input-wrapper form-floating mb-3">
+            <input class="form-control consult-form__input" id="review-name" type="text" placeholder="Ваше ваше имя"
+              required>
+            <label for="consult-name">Ваше имя*</label>
+          </div>
+          <span class="text-sm c-gray d-block mb-1">Телефон</span>
+          <div class="consult-form__input-wrapper form-floating mb-3">
+            <input class="form-control consult-form__input" id="review-phone" type="tel" placeholder="Ваш номер телефона"
+              required>
+            <label for="consult-phone">Номер телефона*</label>
+          </div>
+          <span class="text-sm c-gray d-block mb-1">Ваша почта</span>
+          <div class="consult-form__input-wrapper form-floating mb-3">
+            <input class="form-control consult-form__input" id="review-mail" type="email" placeholder="example@me.com"
+              required>
+            <label for="consult-mail">example@me.com</label>
+          </div>
+          <span class="text-sm c-gray d-block mb-1">Ваш отзыв</span>
+          <div class="consult-form__input-wrapper form-floating mb-3">
+            <textarea class="form-control consult-form__input" id="review-text" placeholder="Расскажите, как обратились к врачу, как прошел приём, помогло ли лечение. Можно указать главные плюсы и недостатки, которые вы отметили."></textarea>
+            <label for="consult-mail">Ваш отзыв</label>
+          </div>
+      
+           <button class="btn btn-primary modal-btn button">Заказать звонок</button>
+          <div class="agreement">
+            <p class="form-policy">Нажимая на кнопку, вы даёте согласие на <a href="#">обработку персональных данных</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+	</div>
+	
+	<script src="js/app.min.js"></script>
+	
+</body>
+
+</html>
+
+
+
+
